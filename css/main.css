@@ -31,52 +31,82 @@ html:focus{
 @media screen and (max-width: 43rem){
     /* ? Base styling */
     /* ? Mobile specific styling */
-    body{
-        padding-left:2.5%;
-        display:flex;
-        height:100%;
-        align-items: start;
-        row-gap: 10%;
-        justify-content: center;
-        flex-direction: column;
-        background-color:blanchedalmond;
-        font-family: strippyregular;
-        font-size: 3.5rem;
-        color:crimson;
-        letter-spacing:0.35rem;
-    }
+
 }
 @media screen and (min-width: 43rem){
     /* ? Wide mobile / tablet specific styling */
-    body{
-        padding-left:2.5%;
-        display:flex;
-        height:100%;
-        align-items: start;
-        row-gap: 10%;
-        justify-content: center;
-        flex-direction: column;
-        background-color:blanchedalmond;
-        font-family: strippyregular;
-        font-size: 3.5rem;
-        color:crimson;
-        letter-spacing:0.35rem;
-    }
+
 }
 @media screen and (min-width: 62rem){
     /* ? Desktop specific styling */
     body{
-        padding-left:2.5%;
         display:flex;
-        height:100%;
-        align-items: start;
-        row-gap: 10%;
-        justify-content: center;
         flex-direction: column;
-        background-color:blanchedalmond;
-        font-family: strippyregular;
-        font-size: 3.5rem;
-        color:crimson;
-        letter-spacing:0.35rem;
+        height:100%;
+        width: 100%;
+        justify-content: stretch;
     }
+    .header{
+        height:5%;
+        background-color: #ca3232;
+        font-family: 'strippyregular';
+        width: 100%;
+    }
+        .header-items{
+            display:flex;
+            height:100%;
+            flex-direction: row;
+            align-items: center;
+            padding-left:1%;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+        }
+            .header-item{
+                text-decoration: none;
+                color:antiquewhite
+            }
+    .content{
+        height:90%;
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+    }
+        #menu{
+            height:100%;
+            width:50%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding:5%;
+        }
+            #menu > a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.8rem;
+                font-family: strippyregular;
+                letter-spacing: 0.1rem;
+                margin-bottom: 1rem;
+                border:10px solid #ca3232;
+                padding:2%;
+            }
+
+    .footer{
+        height:5%;
+        background-color: #ca3232;
+        font-family: 'strippyregular';
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: end;
+    }
+        .footer-item{
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            text-decoration: none;
+            color:antiquewhite;
+            padding-right:1%;
+        }
+
+
 }
