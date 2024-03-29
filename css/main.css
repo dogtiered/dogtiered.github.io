@@ -1,0 +1,38 @@
+/* ? Universal styling*/
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+html{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+html:focus{
+    outline: none !important;
+}
+@media screen and (max-width: 43rem){
+    /* ? Base styling */
+    /* ? Mobile specific styling */
+    body{
+        background-color: red;
+    }
+}
+@media screen and (min-width: 43rem){
+    /* ? Wide mobile / tablet specific styling */
+    body{
+        background-color: green;
+    }
+}
+@media screen and (min-width: 62rem){
+    /* ? Desktop specific styling */
+    body{
+        background-color: blue;
+    }
+}
