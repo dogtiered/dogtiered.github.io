@@ -70,7 +70,7 @@ html:focus{
         overflow:hidden;
     }
     .runner{
-        background-color: #ca3232;
+        background-color: #F50000;
         font-family: 'funkgibson';
         width: 100%;
         height:5%;
@@ -124,18 +124,53 @@ html:focus{
                 letter-spacing: 0.3rem;
                 font-family: 'funkgibson';
                 
-                border:10px solid #ca3232;
+                border:10px solid #F50000;
                 padding:4%;
                 background-color: aliceblue;
             }
         #cloud{
-            background-color: aliceblue;
-            height:50%;
-            width:30%;
+            height:100%;
+            width:50%;
             position: relative;
             top:-5vh;
             margin-left:auto;
+            border:2px solid green;
+            display:flex;
+            justify-content: end;
+            align-items: start;
         }
+            #cloud-title{
+                position: absolute;
+                right:0;
+                font-size: 5rem;
+                border:3px solid green;
+            }
+            #cloud-text{
+                font-size: 13rem;
+                text-align: center;
+                border:3px solid lightblue;
+                
+                font-family: 'retrovolt';
+                letter-spacing: 0.3rem;
+                line-height: 10rem;
+                color:#F50000;
+                position: absolute;
+                top:9rem;
+                right:0;
+                z-index: 999;
+
+            }
+            #cloud-svg{
+                
+                
+                position: absolute;
+                right:0;
+                top:0;
+                z-index: 1;
+                
+                margin-left: auto;
+            }
+
 
     .footer{
         display:flex;
