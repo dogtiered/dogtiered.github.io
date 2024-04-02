@@ -138,38 +138,58 @@ html:focus{
             display:flex;
             justify-content: end;
             align-items: start;
+            container-type: inline-size;
         }
-            #cloud-title{
-                position: absolute;
-                right:0;
-                font-size: 5rem;
-                border:3px solid green;
-            }
-            #cloud-text{
-                font-size: 13rem;
-                text-align: center;
-                border:3px solid lightblue;
-                
-                font-family: 'retrovolt';
-                letter-spacing: 0.3rem;
-                line-height: 10rem;
-                color:#F50000;
-                position: absolute;
-                top:9rem;
-                right:0;
-                z-index: 999;
-
-            }
+        /*  ? Cloud container is 90 vh, and 50vw,  */
             #cloud-svg{
-                
-                
+                /* ? cloud svg max height is 67.5vh
+                ? and max width is 40vw */
                 position: absolute;
                 right:0;
                 top:0;
                 z-index: 1;
-                
+                max-height: 75%;
+                max-width: 80%;
                 margin-left: auto;
             }
+            #cloud-title{
+                position: absolute;
+                z-index: 999;
+                font-family: 'retrovolt';
+                color:#F50000;
+
+                right:1vw;
+                font-size: 4vw;
+            }
+            #cloud-text{
+                text-align: center;
+                font-family: 'retrovolt';
+                color:#F50000;
+                position: absolute;
+                z-index: 999;
+
+                top:4vw;
+                right:1vw;
+                font-size: 8.5vw;
+                letter-spacing: normal;
+                line-height: 8vw;
+            }
+            @media screen and (height < 55.5vw){
+                #cloud-title{
+                    color:#F50000;
+                    right:2vh;
+                    font-size: 8vh;
+                }
+                #cloud-text{
+                    color:#F50000;
+                    top:8vh;
+                    right:2vh;
+                    font-size: 16vh;
+                    letter-spacing: normal;
+                    line-height: 14vh;
+                }
+            }
+
 
 
     .footer{
