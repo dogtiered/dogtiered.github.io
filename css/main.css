@@ -148,7 +148,6 @@ html:focus{
             position: relative;
             top:-5vh;
             margin-left:auto;
-            border:2px solid green;
             display:flex;
             justify-content: end;
             align-items: start;
