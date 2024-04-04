@@ -1,0 +1,52 @@
+@media screen and (max-width: 43rem){
+    /* ? Base styling */
+    /* ? Mobile specific styling */
+
+}
+@media screen and (min-width: 43rem){
+    /* ? Wide mobile / tablet specific styling */
+
+}
+@media screen and (min-width: 62rem){
+    /* ? Desktop specific styling */
+    .clickback{
+        display:none;
+    }
+    .img-container{
+        width: 100%;
+        height:100%;
+        padding-right:10%;
+        padding-left:10%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .full-img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    .clickleft{
+        position: absolute;
+        left:5%;
+        top:0;
+        height:100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 23vh;
+        color:black;
+    }
+    .clickright{
+        position: absolute;
+        right:5%;
+        top:0;
+        height:100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 23vh;
+        color:black;
+    }
+}

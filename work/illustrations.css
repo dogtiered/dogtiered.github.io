@@ -1,0 +1,70 @@
+@media screen and (max-width: 43rem){
+    /* ? Base styling */
+    /* ? Mobile specific styling */
+
+}
+@media screen and (min-width: 43rem){
+    /* ? Wide mobile / tablet specific styling */
+
+}
+@media screen and (min-width: 62rem){
+    /* ? Desktop specific styling */
+    #illustrations-content{
+        width: 100%;
+        padding-left:10%;
+        padding-right:10%;
+        padding-top:5%;
+        padding-bottom:10%;
+        overflow-y: scroll;
+        height:fit-content;
+    }
+        .gallery{
+            display:flex;
+            flex-wrap: wrap;
+            gap:4vh;
+            list-style: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
+            padding-left:3vh;
+            padding-top:3vh;  
+        }
+            .gallery li{
+                flex: 1 1 auto;
+                height: 34vh;
+                cursor:pointer;
+                position: relative;
+            }
+                .gallery li img{
+                    object-fit: cover;
+                    width:100%;
+                    height:100%;
+                    vertical-align: middle;
+                }
+                .gallery li a .image-hover{
+                    height:100%;
+                    width:100%;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    display:flex;
+                    justify-content: end;
+                    align-items: end;
+                    padding:2vh;
+                    color:white;
+                    font-size: 3vh;
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .gallery li a .image-hover:hover{
+                    opacity: 1;
+                    background:rgba(0, 0, 0, 0.432);
+                }
+        .illustrations-gallery{
+
+        }
+
+}
