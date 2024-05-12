@@ -76,7 +76,7 @@ html:focus{
         height:5%;
         letter-spacing: 0.3vh;
     }
-    .header{        
+    /* .header{        
     }
         .header-items{
             display:flex;
@@ -90,25 +90,76 @@ html:focus{
             .header-item{
                 text-decoration: none;
                 color:antiquewhite;
-            }
+            } */
     .content{
-        height:90%;
-        max-height:90%;
+        height:100%;
+        
         width: 100%;
-        box-shadow: inset rgba(0, 0, 0, 0.35) 0px -50px 36px -28px, 
-        inset rgba(0, 0, 0, 0.35) 0px 50px 36px -28px; 
+        /* box-shadow: inset rgba(0, 0, 0, 0.35) 0px -50px 36px -28px, 
+        inset rgba(0, 0, 0, 0.35) 0px 50px 36px -28px;  */
     }
     #index-content{
         display:flex;
-        flex-direction: row;
-        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../imgs/bg.jpeg');
-        background-position:50% 25%;
-        background-size: cover;
-        box-shadow: inset rgba(0, 0, 0, 0.25) 0px -50px 36px -28px, 
-        inset rgba(0, 0, 0, 0.25) 0px 50px 36px -28px; 
-        
+        align-items: center;
+        justify-content: center;
+        background-color:blanchedalmond;
+        padding:8%;
     }
-        #menu{
+        #boxes-container{
+            background-color: rgba(0, 0, 0, 0.144);
+            width: 100%;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            row-gap: 3.5vmax;
+
+        }
+            #about-me{
+                background-color: #f500002a;
+                width: 100%;
+                flex:1.4;
+                position: relative;
+            }
+                #work-row{
+                    border:2px solid red;
+                    width: fit-content;
+                    position: absolute;
+                    right:0;
+                    top:-1.1rem;
+                }
+                #sunny-pfp{
+
+                }
+                #about-me-text{
+                    
+                }
+
+            #education-contant-container{
+                background-color: #31f5002a;
+                width: 100%;
+                flex:1;
+                display:flex;
+                flex-direction: row;
+                column-gap:3.5vmax;
+            }
+                #education{
+                    background-color:rgba(0, 255, 255, 0.253);
+                    flex:3;
+
+                }
+                #contact{
+                    flex:2;
+
+                    background-color:rgba(0, 255, 255, 0.253);
+                }
+
+
+
+
+
+
+
+        /*#menu{
             height:100%;
             max-height: 100%;
             width:50%;
@@ -153,13 +204,12 @@ html:focus{
             align-items: start;
             container-type: inline-size;
             
-        }
-
+        } */
         /*  ? Cloud container is 90 vh, and 50vw,  */
-            #cloud-svg{
+            /* #cloud-svg{ */
                 /* ? cloud svg max height is 67.5vh
                 ? and max width is 40vw */
-                position: absolute;
+                /* position: absolute;
                 right:0;
                 top:0;
                 z-index: 1;
@@ -205,11 +255,11 @@ html:focus{
                     letter-spacing: normal;
                     line-height: 14vh;
                 }
-            }
+            } */
 
 
 
-    .footer{
+    /* .footer{
         display:flex;
         align-items: center;
         justify-content: end;
@@ -219,7 +269,7 @@ html:focus{
             text-decoration: none;
             color:antiquewhite;
             padding-right:1%;
-        }
+        } */
 
 
 }
