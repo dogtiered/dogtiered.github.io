@@ -24,6 +24,18 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'cookie';
+    src: url('../resources/fonts/Cookiemonster-gv11.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sunny';
+    src: url('../resources/fonts/SunnyRegular-K7jmW.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -59,6 +71,15 @@ html:focus{
 
 }
 @media screen and (min-width: 62rem){
+
+    .palette{
+        color:
+        #e18d8b
+        #fff8ee
+        #ffebcb
+        #91b262
+    }
+
     /* ? Desktop specific styling */
     body{
         display:flex;
@@ -68,9 +89,10 @@ html:focus{
         width: 100%;
         justify-content: stretch;
         overflow:hidden;
+        background-color:#ffebcb ;
     }
     .runner{
-        background-color: #F50000;
+        
         font-family: 'funkgibson';
         width: 100%;
         height:5%;
@@ -102,11 +124,12 @@ html:focus{
         display:flex;
         align-items: center;
         justify-content: center;
-        background-color:blanchedalmond;
-        padding:8%;
+        
+        padding:6%;
+        padding-top:calc(6% - 1rm)
     }
         #boxes-container{
-            background-color: rgba(0, 0, 0, 0.144);
+            
             width: 100%;
             height:100%;
             display:flex;
@@ -114,28 +137,87 @@ html:focus{
             row-gap: 3.5vmax;
 
         }
+
             #about-me{
-                background-color: #f500002a;
+                
                 width: 100%;
                 flex:1.4;
+                
+                flex-direction: column;
+                max-height: 100%;
                 position: relative;
             }
-                #work-row{
-                    border:2px solid red;
-                    width: fit-content;
+                #header-row{
+                    height: fit-content;
+                    margin-left:43vh;
+                    -moz-border-radius: 0px;
+                    -webkit-border-radius: 2vmax 2vmax 0px 0px;
+                    border-radius: 2vmax 2vmax 0px 0px; 
+                    background-color: #e18d8b;
+                    font-size: 2vmax;
+                    padding:0.5vmax;
+                    font-family: 'sunny';
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    color:#fff8ee
+                }
+                    #header-row > a{
+                        text-decoration: none;
+                        color:#fff8ee
+                    }
+                #info{
+                    display:flex;
+                    flex-direction: row;
+                    height:100%;
+                    height:calc(100% - 3vmax);
+                    background-color: #fff8ee;
+                }
+                    #sunny-pfp{
+                        
+                        
+                        position: relative;
+                        min-width:43vh;
+                    }
+                        #pfp-img{
+                            position: absolute;
+                            left:-5%;
+                            top:-10%;
+                            object-fit: contain;
+                            height:140%;
+                            max-height: 140%;
+                        }
+                    #about-me-text{
+                        
+                        
+                        padding-left:5.5%;
+                        padding-top:0.5%;
+                        padding-right:1.5%;
+                    }
+                        #about-me-text-title{
+
+                            color:#91b262;
+                            text-align: start;
+                            font-size: 3.5vmax;;
+                            font-family: 'cookie';
+                        }
+                        #about-me-text-content{
+                            color:#91b262;
+                            text-align: start;
+                            font-size: 2vmax;;
+                            font-family: 'sunny';
+                        }
+                #star-a{
+                    width: 30%;
                     position: absolute;
-                    right:0;
-                    top:-1.1rem;
+                    right:-15%;
+                    bottom:-55%;
                 }
-                #sunny-pfp{
-
-                }
-                #about-me-text{
-                    
-                }
-
+                    #star-a-img{
+                        max-width: 100%;
+                    }
             #education-contant-container{
-                background-color: #31f5002a;
+                
                 width: 100%;
                 flex:1;
                 display:flex;
@@ -143,16 +225,56 @@ html:focus{
                 column-gap:3.5vmax;
             }
                 #education{
-                    background-color:rgba(0, 255, 255, 0.253);
+                    
                     flex:3;
-
+                    background-color: #fff8ee;
+                    padding-right:1.5%;
+                    padding-top:0.5%;
+                    padding-left:1.5%;
                 }
+                    #education-title{
+
+                        color:#91b262;
+                        text-align: end;
+                        font-size: 3.5vmax;;
+                        font-family: 'cookie';
+                    }
+                    #education-text{
+                        color:#91b262;
+                        text-align: end;
+                        font-size: 2vmax;;
+                        font-family: 'sunny';
+                    }
+                    #star-b{
+                        width: 30%;
+                        position: absolute;
+                        left:-10%;
+                        bottom:-10%;
+                    }
+                        #star-b-img{
+                            max-width: 100%;
+                        }
                 #contact{
                     flex:2;
-
-                    background-color:rgba(0, 255, 255, 0.253);
+                    background-color: #fff8ee;
+                    
+                    padding-left:1.5%;
+                    padding-top:0.5%;
+                    padding-right:1.5%;
                 }
+                    #contact-title{
 
+                        color:#91b262;
+                        text-align: start;
+                        font-size: 3.5vmax;;
+                        font-family: 'cookie';
+                    }
+                    #contact-text{
+                        color:#91b262;
+                        text-align: start;
+                        font-size: 2vmax;;
+                        font-family: 'sunny';
+                    }
 
 
 
