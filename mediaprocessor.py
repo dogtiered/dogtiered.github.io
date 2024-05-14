@@ -84,15 +84,11 @@ def main(folder_name):
                 </head>
                 <body>
 
-                    <div class="runner header">
-                        <div class="header-items">
-                            <a href="../../../../about.html" class="header-item">About me&nbsp;&nbsp;•</a>
-                            <a href="../../../../index.html" class="header-item">&nbsp;&nbsp;Work&nbsp;&nbsp;•</a>
-                            <a href="../../../../contact.html" class="header-item">&nbsp;&nbsp;Contact</a>
-                        </div>
-                    </div>
+
                     <div class="content">
-                        <a class="clickback" href="../../../index.html"><-</a>
+                        <div class="home-button">
+                            <a class="clickback" href="../../../../index.html">Home</a>
+                        </div>
                         <div class="img-container">
                             <img 
                                 class="full-img" 
@@ -102,9 +98,7 @@ def main(folder_name):
                         <a class="clickleft" href="{prev_img}.html"><</a>        
                         <a class="clickright" href="{next_img}.html">></a>
                     </div>
-                    <div class="runner footer">
-                        <a href="https://nixie.digital" class="footer-item">made by nixie.digital</a>
-                    </div>
+
                 </body>
                 <script>
 

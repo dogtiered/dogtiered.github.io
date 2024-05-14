@@ -143,13 +143,13 @@ html:focus{
 
                             color:#91b262;
                             text-align: start;
-                            font-size: 3.5vmax;;
+                            font-size: 7vmin;;
                             font-family: 'cookie';
                         }
                         #about-me-text-content{
                             color:#91b262;
                             text-align: start;
-                            font-size: 2vmax;;
+                            font-size: 3.5vmin;;
                             font-family: 'sunny';
                         }
                 #star-a{
@@ -181,13 +181,13 @@ html:focus{
 
                         color:#91b262;
                         text-align: end;
-                        font-size: 3.5vmax;;
+                        font-size: 7vmin;;
                         font-family: 'cookie';
                     }
                     #education-text{
                         color:#91b262;
                         text-align: end;
-                        font-size: 2vmax;;
+                        font-size: 3.5vmin;;
                         font-family: 'sunny';
                     }
                     #star-b{
@@ -211,13 +211,13 @@ html:focus{
 
                         color:#91b262;
                         text-align: start;
-                        font-size: 3.5vmax;;
+                        font-size: 7vmin;;
                         font-family: 'cookie';
                     }
                     #contact-text{
                         color:#91b262;
                         text-align: start;
-                        font-size: 2vmax;;
+                        font-size: 3.5vmin;;
                         font-family: 'sunny';
                     }
 
