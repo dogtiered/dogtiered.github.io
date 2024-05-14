@@ -1,29 +1,3 @@
-/* @font-face {
-    font-family: 'strippyregular';
-    src: url('../resources/fonts/WEBFONTS/strippy-regular-webfont.woff2') format('woff2'),
-         url('../resources/fonts/WEBFONTS/strippy-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-} */
-@font-face {
-    font-family: 'funkgibson';
-    src: url('../resources/fonts/FunkGibsonDemoRegular-BW6rd.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'funkgibsonoutline';
-    src: url('../resources/fonts/FunkGibsonDemoOutline-RpDlA.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'retrovolt';
-    src: url('../resources/fonts/retrovoltdemoversionregular-ywd0m.otf');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'cookie';
     src: url('../resources/fonts/Cookiemonster-gv11.ttf');
@@ -61,15 +35,12 @@ html{
 html:focus{
     outline: none !important;
 }
-@media screen and (max-width: 43rem){
+@media screen and (max-width: 62rem){
     /* ? Base styling */
     /* ? Mobile specific styling */
 
 }
-@media screen and (min-width: 43rem){
-    /* ? Wide mobile / tablet specific styling */
 
-}
 @media screen and (min-width: 62rem){
 
     .palette{
@@ -91,34 +62,9 @@ html:focus{
         overflow:hidden;
         background-color:#ffebcb ;
     }
-    .runner{
-        
-        font-family: 'funkgibson';
-        width: 100%;
-        height:5%;
-        letter-spacing: 0.3vh;
-    }
-    /* .header{        
-    }
-        .header-items{
-            display:flex;
-            height:100%;
-            flex-direction: row;
-            align-items: center;
-            padding-left:1%;
-            font-size:3vh;
-            
-        }
-            .header-item{
-                text-decoration: none;
-                color:antiquewhite;
-            } */
     .content{
-        height:100%;
-        
+        height:100%;   
         width: 100%;
-        /* box-shadow: inset rgba(0, 0, 0, 0.35) 0px -50px 36px -28px, 
-        inset rgba(0, 0, 0, 0.35) 0px 50px 36px -28px;  */
     }
     #index-content{
         display:flex;
@@ -129,7 +75,6 @@ html:focus{
         padding-top:calc(6% - 1rm)
     }
         #boxes-container{
-            
             width: 100%;
             height:100%;
             display:flex;
@@ -381,17 +326,7 @@ html:focus{
 
 
 
-    /* .footer{
-        display:flex;
-        align-items: center;
-        justify-content: end;
-    }
-        .footer-item{
-            font-size:3vh;
-            text-decoration: none;
-            color:antiquewhite;
-            padding-right:1%;
-        } */
+
 
 
 }

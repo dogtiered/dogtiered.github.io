@@ -1,12 +1,16 @@
-@media screen and (max-width: 43rem){
+@font-face {
+    font-family: 'sunny';
+    src: url('../resources/fonts/SunnyRegular-K7jmW.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 62rem){
     /* ? Base styling */
     /* ? Mobile specific styling */
 
 }
-@media screen and (min-width: 43rem){
-    /* ? Wide mobile / tablet specific styling */
 
-}
 @media screen and (min-width: 62rem){
     /* ? Desktop specific styling */
     .clickback{
