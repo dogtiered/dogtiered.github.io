@@ -277,11 +277,11 @@ html:focus{
                         
                         
                         position: relative;
-                        min-width:43vh;
+                        min-width:43vmin;
                     }
                         #pfp-img{
                             position: absolute;
-                            left:-6.5vmin;
+                            left:-7.5vmin;
                             top:-5vmin;
                             object-fit: contain;
                             
@@ -304,7 +304,7 @@ html:focus{
                         #about-me-text-content{
                             color:#91b262;
                             text-align: start;
-                            font-size: 3.5vmin;;
+                            font-size: 4vmin;;
                             font-family: 'sunny';
                         }
                 #star-a{
