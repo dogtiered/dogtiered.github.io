@@ -35,21 +35,68 @@ html{
 html:focus{
     outline: none !important;
 }
+.palette{
+    color:
+    #e18d8b
+    #fff8ee
+    #ffebcb
+    #91b262
+}
 @media screen and (max-width: 62rem){
     /* ? Base styling */
     /* ? Mobile specific styling */
+    body{
+        height:100%;
+        width: 100%;
+        background-color:#ffebcb ;
+    }
+    img{width: 10px;
+    height: 10px;}
+    #index-content{
+        width:100%;
+        height:fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: stretch;
+        padding:6%;
+    }
+        #boxes-container{
+            width:100%;
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            row-gap: 3.5vmax;
 
+        }
+            #about-me{
+                width:100%;
+                display:flex;
+                flex-direction: column;
+                
+            }
+                #header-row{
+                    height:fit-content;
+                    -moz-border-radius: 0px;
+                    -webkit-border-radius: 2vmax 2vmax 0px 0px;
+                    border-radius: 2vmax 2vmax 0px 0px; 
+                    background-color: #e18d8b;
+                    font-size: 2vmax;
+                    padding:0.5vmax;
+                    font-family: 'sunny';
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    color:#fff8ee
+                }
+                    #header-row > a{
+                        text-decoration: none;
+                        color:#fff8ee
+                    }
 }
 
 @media screen and (min-width: 62rem){
 
-    .palette{
-        color:
-        #e18d8b
-        #fff8ee
-        #ffebcb
-        #91b262
-    }
+
 
     /* ? Desktop specific styling */
     body{
