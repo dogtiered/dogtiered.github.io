@@ -22,14 +22,6 @@ html{
     width:100%;
     max-height: 100%;
 }
-@media screen and (max-width: 62rem){
-    /* ? Base styling */
-    /* ? Mobile specific styling */
-
-}
-
-@media screen and (min-width: 62rem){
-    /* ? Desktop specific styling */
     .palette{
         color:
         #e18d8b
@@ -37,6 +29,103 @@ html{
         #ffebcb
         #91b262
     }
+@media screen and (max-width: 62rem){
+    /* ? Base styling */
+    /* ? Mobile specific styling */
+.content{
+    width:100%;
+    height:100%;
+    background-color:#ffebcb
+}
+    .home-button{
+        position: absolute;
+        top: 6vw;
+        left:6%;
+        background-color: #e18d8b;
+        border-radius: 2vmax;
+        
+        font-size: 2vmax;
+        padding:0.5vmax;
+        padding-left: 0.75vmax;
+        padding-right: 0.75vmax;
+        
+        z-index: 999;
+    }
+        .clickback{
+            color:#fff8ee;
+            text-decoration: none;
+            font-family: 'sunny';
+            width: 3vmax;
+            height:3vmax;
+
+            
+            
+        }
+    .img-container{
+        width: 100%;
+        height:100%;
+        padding-right:10%;
+        padding-left:10%;
+        padding-top:6%;
+        padding-bottom:6%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .full-img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    .clickleft{
+        position: absolute;
+        right:calc(6% + 20vh);
+        top:6%;
+        height:1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        text-decoration: none;
+        font-size: 20vh;
+        color:#91b262;
+        font-family: 'cookie';
+        font-weight: bolder;
+        z-index: 1;
+    }
+    .clickright{
+        position: absolute;
+        right:6%;
+        top:6%;
+        height:1rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20vh;
+        color:#91b262;
+        font-family: 'cookie';
+        font-weight: bolder;
+        z-index: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 62rem){
+    /* ? Desktop specific styling */
+
 
 .content{
     width:100%;

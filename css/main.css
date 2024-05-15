@@ -74,7 +74,7 @@ html:focus{
                 width:100%;
                 display:flex;
                 flex-direction: column;
-                
+                row-gap: 3.5vmax;
             }
                 #header-row{
                     height:fit-content;
@@ -93,14 +93,17 @@ html:focus{
                         text-decoration: none;
                         color:#fff8ee
                     }
+
                 #info{
                     display:flex;
                     flex-direction: column;
                     height:fit-content;
-                    background-color: #fff8ee;
+                    
                     max-width: 100%;
+                    row-gap: 3.5vmax;
                 }
                     #sunny-pfp{
+                        
                         width:100%;
                         display:flex;
                         justify-content: center;
@@ -113,10 +116,92 @@ html:focus{
 
                             object-fit: contain;
                         }
+                    #about-me-text{
+                        padding-left:5.5%;
+                        padding-top:2.5%;
+                        padding-right:5.5%;
+                        padding-bottom:5.5%; 
+                        background-color: #fff8ee;  
+                        border-radius: 2vmax ;  
+                    }
+                        #about-me-text-title{
+                            color:#91b262;
+                            text-align: center;
+                            font-size: 7vmin;;
+                            font-family: 'cookie';
+                        }
+                        #about-me-text-content{
+                            color:#91b262;
+                            text-align: center;
+                            font-size: 3.5vmin;;
+                            font-family: 'sunny';
+                        }
+            #star-a{
+                display:none;
+            }
+                #star-a-img{
+
+                }
+        #education-contant-container{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            row-gap: 3.5vmax;
+        }
+            #education{
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                padding-left:5.5%;
+                padding-top:2.5%;
+                padding-right:5.5%;
+                padding-bottom:5.5%; 
+                background-color: #fff8ee;  
+                border-radius: 2vmax ;  
+            }
+                #education-title{
+                    color:#91b262;
+                    text-align: center;
+                    font-size: 7vmin;;
+                    font-family: 'cookie';
+                }
+                #education-text{
+                    color:#91b262;
+                    text-align: start;
+                    font-size: 3.5vmin;;
+                    font-family: 'sunny';
+                }
+                #star-b{
+                    display:none;
+                }
+                    #star-b-img{
                         
-
+                    }
+            #contact{
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                padding-left:5.5%;
+                padding-top:2.5%;
+                padding-right:5.5%;
+                padding-bottom:5.5%; 
+                background-color: #fff8ee;   
+                border-radius: 2vmax ; 
+            }
+                #contact-title{
+                    color:#91b262;
+                    text-align: center;
+                    font-size: 7vmin;;
+                    font-family: 'cookie';
+                }
+                #contact-text{
+                    color:#91b262;
+                    text-align: center;
+                    font-size: 3.5vmin;;
+                    font-family: 'sunny';
+                }
+            
 }
-
 @media screen and (min-width: 62rem){
 
 
@@ -196,16 +281,16 @@ html:focus{
                     }
                         #pfp-img{
                             position: absolute;
-                            left:-5%;
-                            top:-10%;
+                            left:-6.5vmin;
+                            top:-5vmin;
                             object-fit: contain;
-                            height:140%;
-                            max-height: 140%;
+                            
+                            max-height: 52vmin;
                         }
                     #about-me-text{
                         
                         
-                        padding-left:5.5%;
+                        padding-left:2.5%;
                         padding-top:0.5%;
                         padding-right:1.5%;
                     }
@@ -255,11 +340,16 @@ html:focus{
                         font-family: 'cookie';
                     }
                     #education-text{
-                        color:#91b262;
+                        color:#91b262c0;
                         text-align: end;
-                        font-size: 3.5vmin;;
+                        font-size: 180%;
                         font-family: 'sunny';
                     }
+                        .education-text-title{
+                            font-size: 105%;
+                            color:#91b262;
+                            margin-top:1%;
+                        }
                     #star-b{
                         width: 30%;
                         position: absolute;
@@ -290,113 +380,5 @@ html:focus{
                         font-size: 3.5vmin;;
                         font-family: 'sunny';
                     }
-
-
-
-
-
-
-        /*#menu{
-            height:100%;
-            max-height: 100%;
-            width:50%;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            padding:5vmin;
-            opacity: 0.85;
-        }
-            .menu-button-container{
-                height:33%;
-                width: 100%;
-                position: relative;
-                display:flex;
-                align-items: center;
-                justify-content: center;
-                
-            }
-                .menu-button-container > a{
-                    position: absolute;
-                    z-index: 999;
-                    font-size: 4vh;
-                    font-family: 'funkgibson';
-                    text-decoration: none;
-                    color:#F50000;
-                    
-                }
-                .button-svg{
-                    position: absolute;
-                    max-height: 80%;
-                    
-                }
-        #cloud{
-            height:100%;
-            width:50%;
-            position: relative;
-            top:-5vh;
-            margin-left:auto;
-            display:flex;
-            justify-content: end;
-            align-items: start;
-            container-type: inline-size;
-            
-        } */
-        /*  ? Cloud container is 90 vh, and 50vw,  */
-            /* #cloud-svg{ */
-                /* ? cloud svg max height is 67.5vh
-                ? and max width is 40vw */
-                /* position: absolute;
-                right:0;
-                top:0;
-                z-index: 1;
-                max-height: 75%;
-                max-width: 80%;
-                margin-left: auto;
-                opacity: 0.85;
-                
-            }
-            #cloud-title{
-                position: absolute;
-                z-index: 999;
-                font-family: 'retrovolt';
-                color:#F50000;
-
-                right:1vw;
-                font-size: 4vw;
-            }
-            #cloud-text{
-                text-align: center;
-                font-family: 'retrovolt';
-                color:#F50000;
-                position: absolute;
-                z-index: 999;
-
-                top:4vw;
-                right:1vw;
-                font-size: 8.5vw;
-                letter-spacing: normal;
-                line-height: 8vw;
-            }
-            @media screen and (height < 55.5vw){
-                #cloud-title{
-                    color:#F50000;
-                    right:2vh;
-                    font-size: 8vh;
-                }
-                #cloud-text{
-                    color:#F50000;
-                    top:8vh;
-                    right:2vh;
-                    font-size: 16vh;
-                    letter-spacing: normal;
-                    line-height: 14vh;
-                }
-            } */
-
-
-
-
-
 
 }

@@ -29,22 +29,141 @@ html{
     width:100%;
     max-height: 100%;
 }
-
+.palette{
+    color:
+    #e18d8b
+    #fff8ee
+    #ffebcb
+    #91b262
+}
 @media screen and (max-width: 62rem){
     /* ? Base styling */
     /* ? Mobile specific styling */
+body{
+    height:100%;
+    width: 100%;
+    background-color:#ffebcb ;
+}
+    .content{
+        padding:6%;
+        height:100%;
+        max-height:100%;
+        overflow:hidden;
+    }
+        .content-buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            column-gap: 5%;
+            padding-right:2vmax;
+            margin-bottom:0vh;
+        }
+            .content-button{
+                background-color: #e18d8b;
+                border-radius: 2vmax 2vmax 0vmax 0vmax; 
+                font-size: 2vmax;
+                padding:0.5vmax;
+                padding-left: 0.75vmax;
+                padding-right: 0.75vmax;
+            }
+                .content-button > a{
+                    color:#fff8ee;
+                    text-decoration: none;
+                    font-family: 'sunny';
+
+                }
+            .content-home-button{
+                margin-right:auto;
+            }
+        .content-gallery-container{
+            width: 100%;
+            height:94%;
+            overflow-y: scroll;
+        }
+        .content-gallery-container::-webkit-scrollbar {
+            width:1vmax;
+        }
+        .content-gallery-container::-webkit-scrollbar-track {
+            background-color: #91b2628a;
+            border-radius: 100px;
+        }
+        .content-gallery-container::-webkit-scrollbar-thumb {
+            background-color:#e18d8b;
+            border-radius: 100px;
+            
+        }
+            .gallery{
+                height:fit-content;
+                display:flex;
+                flex-wrap: wrap;
+                padding-top:3vh;
+                background-color: #fff8ee;
+                padding-bottom:3vh;
+                list-style: none;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-inline-start: 0;
+                margin-inline-end: 0;
+                padding-inline-start: 0;
+                margin-right: 1vmax;;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-evenly;
+                gap: 4vmax;
+                padding-left:3vh;
+                padding-right:3vh;
+                
+            }
+                .gallery li{
+                    flex: 1 1 auto;
+                    height: fit-content;
+                    max-width:  12vh;
+                }
+                    .gallery li a{
+                        display: block;
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    .gallery li img{
+                        object-fit: contain;
+                        width:100%;
+                        height:100%;
+                        vertical-align: middle;
+                    }
+                    .gallery li a .image-hover{
+
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        display:flex;
+                        justify-content: end;
+                        align-items: end;
+                        
+                        color:#fff8ee;
+                        font-family: 'sunny';
+                        font-size: 1.7vh;
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                        height:100%;
+                        width:100%;
+                        padding-bottom:1vh;
+                        padding-right:1vh;
+                    }
+
+                    .gallery li a .image-hover:hover{
+                        opacity: 1;
+                        background:rgba(0, 0, 0, 0.432);
+                    }
+
+
 
 }
 @media screen and (min-width: 62rem){
     /* ? Desktop specific styling */
 
-    .palette{
-        color:
-        #e18d8b
-        #fff8ee
-        #ffebcb
-        #91b262
-    }
+
 body{
     display:flex;
     flex-direction: column;
