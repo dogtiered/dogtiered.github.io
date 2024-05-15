@@ -30,7 +30,8 @@ html{
     user-select: none;    
     height:100%;
     width:100%;
-    max-height: 100%;
+    margin: 0; 
+    padding: 0;
 }
 html:focus{
     outline: none !important;
@@ -49,9 +50,9 @@ html:focus{
         height:100%;
         width: 100%;
         background-color:#ffebcb ;
+
     }
-    img{width: 10px;
-    height: 10px;}
+
     #index-content{
         width:100%;
         height:fit-content;
@@ -66,7 +67,8 @@ html:focus{
             display:flex;
             flex-direction: column;
             row-gap: 3.5vmax;
-
+            font-size: 0.5rem;
+            
         }
             #about-me{
                 width:100%;
@@ -76,9 +78,8 @@ html:focus{
             }
                 #header-row{
                     height:fit-content;
-                    -moz-border-radius: 0px;
-                    -webkit-border-radius: 2vmax 2vmax 0px 0px;
-                    border-radius: 2vmax 2vmax 0px 0px; 
+
+                    border-radius: 2vmax ; 
                     background-color: #e18d8b;
                     font-size: 2vmax;
                     padding:0.5vmax;
@@ -92,6 +93,28 @@ html:focus{
                         text-decoration: none;
                         color:#fff8ee
                     }
+                #info{
+                    display:flex;
+                    flex-direction: column;
+                    height:fit-content;
+                    background-color: #fff8ee;
+                    max-width: 100%;
+                }
+                    #sunny-pfp{
+                        width:100%;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color:#ffebcb ;
+                    }
+                        #pfp-img{
+                            width: 90%;
+                            margin-right:10%;
+
+                            object-fit: contain;
+                        }
+                        
+
 }
 
 @media screen and (min-width: 62rem){
