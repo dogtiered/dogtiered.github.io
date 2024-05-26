@@ -114,7 +114,7 @@ def main(folder_name):
 
     html_string = ""
     for img in list_of_imgs:
-        html_string += f'<li><a href="..{folder_name.replace(os.sep, "/")}/pages/{img}.html"><img src="..{folder_name.replace(os.sep, "/")}/thumbs/{img}" alt="{img}"><div class="image-hover">{img.split(".")[0].replace('-',' ')}</div></a></li>'
+        html_string += f'<li><a href="..{folder_name.replace(os.sep, "/")}/pages/{img}.html"><img src="..{folder_name.replace(os.sep, "/")}/thumbs/{img}" alt="{img}"><div class="image-hover">{img.split(".")[0].replace("-"," ")[3:]}</div></a></li>'
     print('\n\n\nCOPY THIS INTO THE HTML FILE\n\n',html_string,'\n\n')
 
 if __name__ == "__main__":
