@@ -1,2 +1,2 @@
 # dogtiered.github.io
-sunnys portfolio site!
+Portfolio display for dogtiered, made by [nixi digital](https://github.com/dual-shock)
