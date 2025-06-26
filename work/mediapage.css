@@ -156,6 +156,33 @@ body{
                         opacity: 1;
                         background:rgba(0, 0, 0, 0.432);
                     }
+        .credit-button-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            column-gap: 5%;
+            padding-right:2vmax;
+            margin-bottom:0vh;
+        }
+            .credit-button{
+                background-color: #e18d8b;
+                border-radius: 0vmax 0vmax 2vmax 2vmax; 
+                font-size: 2vmax;
+                padding:0.5vmax;
+                padding-left: 0.75vmax;
+                padding-right: 0.75vmax;
+                margin-left:auto;
+                                    color:#fff8ee;
+                    text-decoration: none;
+                    font-family: 'sunny';
+            }
+                .credit-button > a{
+                    color:#fff8ee;
+                    text-decoration: none;
+                    font-family: 'sunny';
+                    text-decoration: underline;
+                }
 
 
 
@@ -296,6 +323,35 @@ body{
                         background:rgba(0, 0, 0, 0.432);
                     }
                 
+        .credit-button-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            column-gap: 5%;
+            padding-right:2vmax;
+            margin-bottom:0vh;
+        }
+            .credit-button{
+                background-color: #e18d8b;
+                border-radius: 0vmax 0vmax 2vmax 2vmax; 
+                font-size: 2vmax;
+                padding:0.5vmax;
+                padding-left: 0.75vmax;
+                padding-right: 0.75vmax;
+                margin-left:auto;
+                                    color:#fff8ee;
+                    text-decoration: none;
+                    font-family: 'sunny';
+            }
+                .credit-button > a{
+                    color:#fff8ee;
+                    text-decoration: none;
+                    font-family: 'sunny';
+                    text-decoration: underline;
+                }
+
+
         .photo-gallery{
 
         }

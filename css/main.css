@@ -200,6 +200,33 @@ html:focus{
                     font-size: 3.5vmin;;
                     font-family: 'sunny';
                 }
+                #credit-button-container.on-desktop{
+                    display:none;
+                }
+                #credit-button-container{
+                    height:fit-content;
+
+                    
+                    font-size: 2vmax;
+
+                    font-family: 'sunny';
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:#fff8ee;
+                }
+                    #credit-button{
+                        background-color: #e18d8b;
+                        color:#fff8ee;
+                        padding:0.5vmax;
+                        border-radius: 2vmax ; 
+                                        padding-left: 0.75vmax;
+                padding-right: 0.75vmax;
+                    }
+                    #credit-button > a{
+                        text-decoration: underline;
+                        color:#fff8ee
+                    }
             
 }
 @media screen and (min-width: 62rem){
@@ -235,7 +262,7 @@ html:focus{
             display:flex;
             flex-direction:column;
             row-gap: 3.5vmax;
-
+            position:relative;
         }
 
             #about-me{
@@ -323,6 +350,7 @@ html:focus{
                 display:flex;
                 flex-direction: row;
                 column-gap:3.5vmax;
+                position:relative; 
             }
                 #education{
                     
@@ -366,6 +394,7 @@ html:focus{
                     padding-left:1.5%;
                     padding-top:0.5%;
                     padding-right:1.5%;
+                   
                 }
                     #contact-title{
 
@@ -380,5 +409,35 @@ html:focus{
                         font-size: 3.5vmin;;
                         font-family: 'sunny';
                     }
+                #credit-button-container.on-mobile{
+                    display:none;
+                }
+                #credit-button-container{
+                    height:fit-content;
+
+                    font-size: 2vmax;
+
+                    font-family: 'sunny';
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    color:#fff8ee;
+                    position:absolute; 
+                    right:0;
+                    top:100%;
+                }
+                    #credit-button{
+                        background-color: #e18d8b;
+                        color:#fff8ee;
+                        padding:0.5vmax;
+                        border-radius: 0vmax 0vmax 2vmax 2vmax; 
+                                        padding-left: 0.75vmax;
+                padding-right: 0.75vmax;
+                    }
+                    #credit-button > a{
+                        text-decoration: underline;
+                        color:#fff8ee
+                    }
+
 
 }
