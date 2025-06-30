@@ -20,6 +20,18 @@
     margin: 0; 
     padding: 0;
 }
+
+/* Style for numbers and special characters that need fallback fonts */
+.text-number {
+    font-family: "comic sans ms", "Comic Sans", cursive; /* Fallback font */
+}
+
+/* Specific styling for text-number in different sections */
+
+
+
+
+
 html{
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -133,8 +145,19 @@ html:focus{
                         #about-me-text-content{
                             color:#91b262;
                             text-align: center;
-                            font-size: 3.5vmin;;
-                            font-family: 'sunny';
+                            font-size: 3.5vmin;
+
+                            font-family: 'sunny', "Comic Sans MS", "Comic Sans", cursive;
+                        }
+                        #about-me-text .text-number {
+                            font-size: 2.5vmin;
+                            line-height:0.8; 
+                            vertical-align:top;
+                        }
+                        #about-me-text .text-number.line{
+                            font-size: 3vmin;
+                            line-height:0.6; 
+                            vertical-align: top;
                         }
             #star-a{
                 display:none;
@@ -171,6 +194,16 @@ html:focus{
                     font-size: 3.5vmin;;
                     font-family: 'sunny';
                 }
+                    .education-text-title{
+                        font-size: 110%;
+                        color:#91b262;
+                        margin-top:1%;
+                    }
+                    #education-text .text-number {
+                        font-size:70%;
+                        line-height:0.8;
+                        vertical-align: middle;
+                    }
                 #star-b{
                     display:none;
                 }
@@ -200,6 +233,11 @@ html:focus{
                     font-size: 3.5vmin;;
                     font-family: 'sunny';
                 }
+                    #contact-text .text-number {
+                        font-size: 2.5vmin;
+                        line-height: 0.9;
+                        vertical-align: top;
+                    }
                 #credit-button-container.on-desktop{
                     display:none;
                 }
@@ -311,7 +349,7 @@ html:focus{
                             left:-7.5vmin;
                             top:-5vmin;
                             object-fit: contain;
-                            
+                            z-index: 100;
                             max-height: 52vmin;
                         }
                     #about-me-text{
@@ -333,6 +371,16 @@ html:focus{
                             text-align: start;
                             font-size: 4vmin;;
                             font-family: 'sunny';
+                        }
+                        #about-me-text .text-number {
+                            font-size: 3vmin;
+                            line-height:0.8; 
+                            vertical-align:top;
+                        }
+                        #about-me-text .text-number.line{
+                            font-size: 3.5vmin;
+                            line-height:0.6; 
+                            vertical-align: top;
                         }
                 #star-a{
                     width: 30%;
@@ -378,6 +426,11 @@ html:focus{
                             color:#91b262;
                             margin-top:1%;
                         }
+                        #education-text .text-number {
+                            font-size:74%;
+                            
+                            vertical-align: middle;
+                        }
                     #star-b{
                         width: 30%;
                         position: absolute;
@@ -408,6 +461,11 @@ html:focus{
                         text-align: start;
                         font-size: 3.5vmin;;
                         font-family: 'sunny';
+                    }
+                    #contact-text .text-number {
+                        font-size: 2.5vmin;
+                        line-height: 0.9;
+                        vertical-align: top;
                     }
                 #credit-button-container.on-mobile{
                     display:none;

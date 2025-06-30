@@ -1,0 +1,1 @@
+- make titles on hover of works also have different size for numbers ! 
